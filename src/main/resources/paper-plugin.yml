@@ -1,0 +1,4 @@
+name: eggfire
+version: '${version}'
+main: me.max.eggfire.Eggfire
+api-version: '1.20'
