@@ -2,3 +2,6 @@ name: eggfire
 version: '${version}'
 main: me.max.eggfire.Eggfire
 api-version: '1.20'
+commands:
+  config:
+    description: lists all config options
