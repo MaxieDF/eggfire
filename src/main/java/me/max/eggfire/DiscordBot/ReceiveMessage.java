@@ -21,7 +21,7 @@ public class ReceiveMessage extends ListenerAdapter implements EventListener{
         Logger logger = Eggfire.getPlugin().getLogger();
         String id = config.getString("channel-id");
         if(e.getChannel().getId().equals(id) && !e.getAuthor().isBot()){
-            @NotNull TextComponent component = Component.text(ChatColor.BLUE + e.getMember().getEffectiveName() + ChatColor.WHITE + ": " + e.getMessage().getContentRaw());
+            @NotNull TextComponent component = Component.text(ChatColor.BLUE + e.getMember().getEffectiveName() + ChatColor.WHITE + ": " + e.getMessage().getContentDisplay());
             server.sendMessage(component);
         }
     }

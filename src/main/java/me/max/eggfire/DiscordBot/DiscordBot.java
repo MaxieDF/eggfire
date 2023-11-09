@@ -21,4 +21,8 @@ public class DiscordBot{
                 .setStatus(OnlineStatus.ONLINE).build();
         jda.addEventListener(new ReceiveMessage());
     }
+
+    public JDA getJda(){
+        return this.jda;
+    }
 }

@@ -20,10 +20,11 @@ import org.jetbrains.annotations.Nullable;
 
 public final class Eggfire extends JavaPlugin {
     private String token = "";
-    private DiscordBot bot;
+    private static DiscordBot bot;
     public static JavaPlugin getPlugin(){
         return getPlugin(Eggfire.class);
     }
+    public static DiscordBot getBot(){ return bot; }
     @Override
     public void onEnable() {
         // Plugin startup logic
